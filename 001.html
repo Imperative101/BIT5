@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GALERIJA</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src='https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js'></script>
@@ -36,17 +36,89 @@
                 .grid-gutter-sizer {
                   width: 0;
                  }
+
+                 .line {
+            color: red;
+                    }
+
+                    body {
+              overflow-y: scroll;            
+                       }
             </style>
 </head>
 <body> 
     <div class='container'>
+        <div class='line-group'>
+            <p class='testas'>Line group</p>
+            <div class='line'>Tekstas</div>
+        </div>
+
+        <div class='line'>Tekstas</div>
+
+
+        <div class='sort-by-button-group button-group'>
+            <button class='btn btn-outline-primary' data-sort-value='title' data-sort-direction='asc'>A-Z</button>
+            <button class='btn btn-primary' data-sort-value='title' data-sort-direction='desc'>Z-A</button>
+            <button class='btn btn-primary' data-sort-value='random' data-sort-direction='desc'>Random</button>
+        </div>
+
+
         <div class='row grid'>
             <div class='col-md-6 grid-sizer'></div>
             <div class='grid-gutter-sizer'></div>
         </div>
+        <div class='footer'>TEst</div>
     </div>
     
-<script> /* objektas kur aprasytas zmogus. ziureti browsere per console log*/
+<script> 
+
+var iso;
+        var page = 1;
+        var loading = true;
+
+        document.addEventListener('DOMContentLoaded', function() {
+        
+        loadImage(page);
+        
+        var sortByGroup = document.querySelector('.sort-by-button-group');
+                sortByGroup.addEventListener('click', function( event ){
+                    if(!matchesSelector(event.target,'.btn')) {
+                        return;
+                    }
+                    
+                    var sortValue = event.target.getAttribute('data-sort-value');
+                    var sortDirection = event.target.getAttribute('data-sort-direction');
+                    var isAscending = (sortDirection == 'asc') ;// true, false
+
+                    iso.arrange({
+                        sortBy: sortValue,
+                        sortAscending: isAscending
+                    });
+
+                });
+
+
+                   } , false);
+
+               window.addEventListener('scroll', function() {
+               if(loading) {
+                return;
+                  }
+
+
+// console.log(window.innerHeight + ' ' + window.scrollY + ' ' + document.body.offsetHeight)
+                if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                loading = true;
+                page++;
+                loadImage(page);
+                console.log(page);
+            } 
+        }, false);
+
+
+
+
+/* objektas kur aprasytas zmogus. ziureti browsere per console log*/
  //       var zmogus = {
  //           'vardas': 'john',
   //          'pavarde': 'wayne',
@@ -145,7 +217,7 @@
         // console.log(masyvas);
 
 
-
+        function loadImage(page) {
         fetch("https://api.unsplash.com/photos/?client_id=JEpL4UXn282wzo0W_AYmYOUqTPL774v7NS8pAPhCoNk")
         .then(res => res.json())
         .then(data => {
@@ -177,7 +249,8 @@
                    
                 }
                 
-                var iso = new Isotope('.grid',{
+                // pasalinti vae
+                    iso = new Isotope('.grid',{
                     itemSelector: '.grid-item',
                     stagger: 30,
                     getSortData: {
@@ -189,10 +262,40 @@
                     },
 
                     sortBy: 'title',
-                    sortAscending: true
-                });
+                    sortAscending: true,
+                
+
+                        
+                        visibleStyle: { transform: 'translateY(0)', opacity: 1 },
+                        hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
+                    });
+
+                 loading=false;    
+
+
+
+          //          var sortValue = event.target.getAttribute('data-sort-value');
+          //          var sortDirection = event.target.getAttribute('data-sort-direction');
+          //          var isAscending = (sortDirection == 'asc') ;// true, false
+
+          //          iso.arrange({
+          //              sortBy: sortValue,
+          //              sortAscending: isAscending
+          //          });
+
+                   // if(typeof tekstas == 'undefined')
+
+          //          console.log(sortValue);
+          //          console.log(sortDirection);
+          //          console.log(isAscending);
+           //     });
+
+
+
             }
         );
+
+    }
 </script>
 
 
