@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#3 uzduotis</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <style>
+        
+        * {
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+        }
+        body {
+            max-width: 1920px;
+            margin: 0 auto;
+            font-family: 'Arial black'; 
+            /* font-family: 'Gotham';
+            url('fonts/Gotham-Bold.woff') format('woff'), /* Modern Browsers */
+            line-height: 20px;
+            color: #000000;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 100%;
+            margin: auto;
+        }
+      
+        .area {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: stretch;
+            margin-left: auto;
+            margin-right: auto;
+            
+    
+        }
+        .navbar-component {
+            background-color: white;
+        }
+
+        .navbar-component > .navbar {
+            justify-content: space-between;
+        }
+
+        .navbar > .brand {
+            display: block;
+            font-size: 1rem;
+            color: #000000;
+            margin: 22px; 
+        }
+        .navbar > .list {
+            display:flex;
+        }
+        
+        .navbar > .list > .item {
+            display: block;
+            height: 64px;
+            line-height: 64px;
+            padding-left: 22px;
+            padding-right: 22px;
+            text-transform: uppercase;
+            color: #555;
+            font-size: 0.875rem
+        }
+
+        .navbar > .list > .item.-link {
+            line-height: 68px;
+            color:#000000;
+            border-bottom: 4px solid transparent;
+            padding-bottom: 22px;
+        }
+       
+        .navbar > .list > .item.-link:hover {
+            color:#333;
+            border-bottom-color: #000000 ;
+        }
+
+        .navbar > .toggle > .icon,
+        .navbar > .toggle > .icon:before,
+        .navbar > .toggle > .icon:after
+        {
+            display: block;
+            width: 24px;
+            height: 3px;
+            background-color: #555555;
+            transition: background-color 0.3s linear, transform 0.3s linear;
+        }
+
+        .navbar > .toggle > .icon:before,
+        .navbar > .toggle > .icon:after {
+            position: absolute;
+            content:""
+        }
+        .navbar > .toggle > .icon:before {
+            top: -8px;
+        }
+        .navbar > .toggle > .icon:after {
+            top: 8px;
+        }
+        .navbar > .toggle > .icon {
+            position: relative;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        .navbar > .toggle {
+            display:none;
+            border:0;
+            background-color: transparent;
+            cursor: pointer;
+            padding: 22px;
+        }
+
+        .navbar > .toggle.active > .icon {
+            background-color: transparent;
+        }
+        .navbar > .toggle.active > .icon:before {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .navbar > .toggle.active > .icon:after {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+
+        @media all and (max-width: 786px) {
+
+    .area {
+    flex-direction: column;
+    }
+
+    .navbar > .list {
+    display:none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+    .navbar >.list.active {
+    display:flex;
+    }
+
+    .navbar > .list > .item {
+    width: 100%
+    }
+
+    .navbar > .toggle {
+    position: absolute;
+    right: 0;
+
+    display:block;
+
+}
+        }
+
+/* columns*/
+
+        .container2 
+            {   width: 100%;
+                margin: auto;
+            }
+
+      
+ 
+
+        .column0 {
+            width: 100%;
+            background-color: white;
+            float:left;
+            height: 100px;
+            font-size: 40px;
+            margin-top: 30px;
+            padding-left: 40px;
+        }
+        .column1 {
+            width: 33.33%;
+            background-color: white;
+            float:left;
+            height: 200px;
+            position:relative;
+            margin-top: 30px;
+            padding-left: 40px;
+
+        }
+        .column2 {
+            width: 33.33%;
+            background-color: white;
+            float:left;
+            height: 200px;
+            position:relative;
+            margin-top: 30px;
+            padding-left: 40px;
+        }
+        .column3 {
+            width: 33.33%;
+            background-color: white;
+            float:left;
+            height: 200px;
+            position:relative;
+            margin-top: 30px;
+            padding-left: 40px;
+        }
+
+        .h4 {
+            font: normal; 
+            color: #9e9d9d;
+           
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class='container'>
+        <div class='navbar-component'>
+            <div class='navbar area' > 
+                    <nav id='navigation' class='list'>
+                        <a href ='#' class='item -link'> SERVICES </a>
+                        <a href ='#' class='item -link'> ABOUT US </a>
+                        <a href ='#' class='item -link'> OUR TEAM </a>
+                        <a href ='#' class='item -link'> TESTIMONIALS </a>
+                        <a href ='#' class='item -link'> NEWS </a>
+                        <a href ='#' class='item -link'> CONTACTS </a>
+                            <span class='item'>
+                                <i class='fa fa-search'>  </i> <!-- icon atvaizdavimas  fontawesome class   https://fontawesome.com/v4.7.0/icons/  -->
+                            </span>
+                    </nav>
+
+                    <button class='toggle'>
+                        <button id='hamburger' class='toggle'>
+                            <span class='icon'></span>
+                        </button>
+                </div>
+        </div>
+</div>
+
+
+<div class='container2'>
+
+    <div class='column0'>
+        <p> Search Results</p>
+    </div>
+
+        <div class='column1'>
+            <h4> Category</h4>
+            <p> Assessing the Maturity of Your Data Management in Industry</p>
+            <h4> At vero eos et accusamus et iusto odio dignissimos dueims...</h4>
+        
+        
+            <h4> Category</h4>
+            <p> Assessing the Maturity of Your Data Management in Industry</p>
+            <h4> At vero eos et accusamus et iusto odio dignissimos dueims...</h4>
+        </div>
+      
+        <div class='column2'>
+            <h4> Category</h4>
+            <p> Assessing the Maturity of Your Data Management in Industry</p>
+            <h4> At vero eos et accusamus et iusto odio dignissimos dueims...</h4>
+      
+            <h4> Category</h4>
+            <p> Assessing the Maturity of Your Data Management in Industry</p>
+            <h4> At vero eos et accusamus et iusto odio dignissimos dueims...</h4>
+        </div>
+
+        <div class='column3'>
+        
+            <h4> Category</h4>
+            <p> Assessing the Maturity of Your Data Management in Industry</p>
+            <h4> At vero eos et accusamus et iusto odio dignissimos dueims...</h4>
+        
+            <h4> Category</h4>
+            <p> Assessing the Maturity of Your Data Management in Industry</p>
+            <h4> At vero eos et accusamus et iusto odio dignissimos dueims...</h4>
+        </div>
+              
+
+        
+
+
+
+
+    </div>
+    </div>
+</body>
+</html>
