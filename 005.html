@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>#3 uzduotis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <style>
         
@@ -35,6 +36,7 @@
             align-items: stretch;
             margin-left: auto;
             margin-right: auto;
+            padding-left: 270px;
             
     
         }
@@ -75,6 +77,7 @@
         }
        
         .navbar > .list > .item.-link:hover {
+
             color:#333;
             border-bottom-color: #000000 ;
         }
@@ -171,35 +174,36 @@
             height: 100px;
             font-size: 40px;
             margin-top: 30px;
-            padding-left: 40px;
+            padding-left: 140px;
         }
         .column1 {
             width: 33.33%;
             background-color: white;
             float:left;
-            height: 200px;
+            height: 390px;
             position:relative;
             margin-top: 30px;
-            padding-left: 40px;
+            padding-left: 140px;
 
         }
         .column2 {
             width: 33.33%;
             background-color: white;
             float:left;
-            height: 200px;
+            height: 390px;
             position:relative;
             margin-top: 30px;
-            padding-left: 40px;
+            padding-left: 80px;
         }
         .column3 {
             width: 33.33%;
             background-color: white;
             float:left;
-            height: 200px;
+            height: 390px;
             position:relative;
             margin-top: 30px;
             padding-left: 40px;
+            padding-right: 40px;
         }
 
         .h4 {
@@ -207,6 +211,95 @@
             color: #9e9d9d;
            
         }
+
+        .button{
+            width: 100%;
+            background-color: white;
+            float:left;
+            height: 100px;
+            position:relative;
+            margin-top: 30px;
+            padding-left: 140px;
+            padding-right: 40px;
+
+        }
+
+        .btn {
+            font: arial bold;
+            color: #FFFFFF;
+            background-color: #536ddd;
+            
+            padding-left: 40px;
+            padding-right:40px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: none;
+        }
+
+        .btn:hover {
+            cursor:pointer;
+        }
+
+        .button2{
+            width: 100%;
+            background-color: white;
+            float:left;
+            height: 100px;
+            position:relative;
+            margin-top: 5px;
+            padding-left: 1200px;
+            padding-right: 40px;
+        }
+
+        .item2 {
+            font: arial bold;
+            color: #000000;
+            background-color: #ffffff;
+            
+            padding-left: 160px;
+          
+            padding-top: 20px;
+            padding-bottom: 15px;
+            border: none;
+        }
+
+        .item3  {
+            font: arial bold;
+            color: #000000;
+            background-color: #ffffff;
+            padding-left: 10px;
+            padding-top: 20px;
+            padding-bottom: 15px;
+            border: none;
+        }
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+/* Linkedin */
+.fa-linkedin {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+
 
     </style>
 
@@ -222,9 +315,25 @@
                         <a href ='#' class='item -link'> TESTIMONIALS </a>
                         <a href ='#' class='item -link'> NEWS </a>
                         <a href ='#' class='item -link'> CONTACTS </a>
+
+
+
+            
+
+                        <div class='item2'>
+                            <button onclick="changeLanguage('ru')">
+                            RU</button> </div>
+
+                            <span class='item3'>
+                            <button onclick="changeLanguage('eng')">
+                              EN</button>
+                            </span>
+
                             <span class='item'>
                                 <i class='fa fa-search'>  </i> <!-- icon atvaizdavimas  fontawesome class   https://fontawesome.com/v4.7.0/icons/  -->
                             </span>
+
+
                     </nav>
 
                     <button class='toggle'>
@@ -246,8 +355,7 @@
             <h4> Category</h4>
             <p> Assessing the Maturity of Your Data Management in Industry</p>
             <h4> At vero eos et accusamus et iusto odio dignissimos dueims...</h4>
-        
-        
+            <br>
             <h4> Category</h4>
             <p> Assessing the Maturity of Your Data Management in Industry</p>
             <h4> At vero eos et accusamus et iusto odio dignissimos dueims...</h4>
@@ -257,7 +365,7 @@
             <h4> Category</h4>
             <p> Assessing the Maturity of Your Data Management in Industry</p>
             <h4> At vero eos et accusamus et iusto odio dignissimos dueims...</h4>
-      
+            <br>
             <h4> Category</h4>
             <p> Assessing the Maturity of Your Data Management in Industry</p>
             <h4> At vero eos et accusamus et iusto odio dignissimos dueims...</h4>
@@ -268,19 +376,41 @@
             <h4> Category</h4>
             <p> Assessing the Maturity of Your Data Management in Industry</p>
             <h4> At vero eos et accusamus et iusto odio dignissimos dueims...</h4>
-        
+            <br>
             <h4> Category</h4>
             <p> Assessing the Maturity of Your Data Management in Industry</p>
             <h4> At vero eos et accusamus et iusto odio dignissimos dueims...</h4>
         </div>
               
+        <div class='button'> 
 
+            <div class='right-column-bottom-action'>
+                <button class='btn'>Load more</button>
+            </div>
+
+        </div>
         
-
+        <div class='button2'>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-facebook"></a>
+        </div> 
 
 
 
     </div>
     </div>
+
+    <script>
+    (function () {
+var chosen ="en";
+
+document.getElementById("chooser").onchange = function(){
+document.getElementById(chosen).style.display="none";
+chosen=this.value;
+document.getElementById(chosen).style.display="block";
+}
+})();
+    </script>
+
 </body>
 </html>
