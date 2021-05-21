@@ -7,6 +7,11 @@
     <title>#3 uzduotis</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Source+Sans+Pro" >
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" >
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
     <style>
         
         * {
@@ -18,24 +23,13 @@
         body {
             max-width: 1920px;
             margin: 0 auto;
-            font-family: 'Source Sans Pro', sans-serif; 
+            font-family: 'Source Sans Pro';
             /* font-family: 'Gotham';
             url('fonts/Gotham-Bold.woff') format('woff'), /* Modern Browsers */
             line-height: 20px;
             color: #000000;
             background-color: #f5f5f5;
         }
-
-        .h1, .h2, .h3, .h4, .h5, .h6, .h7 {
-            font-family: 'Source Sans Pro', sans-serif; 
-        }
-
-
-
-
-
-
-
         .container {
             width: 100%;
             margin: auto;
@@ -139,7 +133,14 @@
         }
 
 
-        @media all and (max-width: 786px) {
+
+        @media screen and (max-width: 708px) {
+    #login .or {
+        display:none;
+    }
+}
+
+        @media screen and (max-width: 786px) {
 
     .area {
     flex-direction: column;
@@ -170,8 +171,36 @@
 
 
 
-        
-/* columns*/
+
+        @media screen and (max-width:500px) {
+    .btn {
+        font-size: 17px;
+    }
+
+    .column1, .column2, .column3 {
+        width:100%
+    }
+
+    .left-column {
+        height: auto;
+    }
+
+  
+    h4 {
+        padding-bottom:20px;
+    }
+
+    .or {
+        display:inline-block !important;
+    }
+}
+
+
+/* columns  , skaiciuoti procentaliai is 1920.   235/1920= 0.12% = 12% 
+ne pikseliais, o procentais. 
+
+
+*/
 
         .container2 
             {   width: 100%;
@@ -239,7 +268,7 @@
         }
 
         .btn {
-            font: 'Source Sans Pro', sans-serif;
+            font: 'Source Sans Pro';
             color: #FFFFFF;
             background-color: #536ddd;
             
@@ -266,7 +295,7 @@
         }
 
         .item2 {
-            font: 'Source Sans Pro', sans-serif;
+            font: 'Source Sans Pro';;
             color: #000000;
             background-color: #ffffff;
             
@@ -278,7 +307,7 @@
         }
 
         .item3  {
-            font: 'Source Sans Pro', sans-serif;
+            font: 'Source Sans Pro';;
             color: #000000;
             background-color: #ffffff;
             padding-left: 10px;
@@ -416,14 +445,14 @@
 
     <script>
     (function () {
-        var chosen ="en";
+var chosen ="en";
 
-    document.getElementById("chooser").onchange = function(){
-    document.getElementById(chosen).style.display="none";
-    chosen=this.value;
-    document.getElementById(chosen).style.display="block";  
-    }
-    })();
+document.getElementById("chooser").onchange = function(){
+document.getElementById(chosen).style.display="none";
+chosen=this.value;
+document.getElementById(chosen).style.display="block";
+}
+})();
     </script>
 
 </body>
