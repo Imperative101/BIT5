@@ -7,10 +7,9 @@
     <title>#3 uzduotis</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Source+Sans+Pro" >
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" >
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
         
@@ -23,16 +22,17 @@
         body {
             max-width: 1920px;
             margin: 0 auto;
-            font-family: 'Source Sans Pro';
+            font-family: 'Poppins', sans-serif;
             /* font-family: 'Gotham';
             url('fonts/Gotham-Bold.woff') format('woff'), /* Modern Browsers */
             line-height: 20px;
             color: #000000;
-            background-color: #f5f5f5;
+            background-color: #ffffff;
         }
         .container {
             width: 100%;
             margin: auto;
+            background-color: #ffffff;
         }
       
         .area {
@@ -41,7 +41,7 @@
             align-items: stretch;
             margin-left: auto;
             margin-right: auto;
-            padding-left: 270px;
+            /* padding-left: 270px; */
             
     
         }
@@ -142,6 +142,13 @@
 
         @media screen and (max-width: 786px) {
 
+            .col {
+                width: 100% !important;
+            }
+
+            .search-item {
+                width:100% !important;
+            }
     .area {
     flex-direction: column;
     }
@@ -205,6 +212,7 @@ ne pikseliais, o procentais.
         .container2 
             {   width: 100%;
                 margin: auto;
+                background-color: #ffffff;
             }
 
       
@@ -214,8 +222,8 @@ ne pikseliais, o procentais.
             width: 100%;
             background-color: white;
             float:left;
-            height: 100px;
-            font-size: 40px;
+            /* height: 100px; */
+            /* font-size: 40px; */
             margin-top: 30px;
             padding-left: 140px;
         }
@@ -223,7 +231,6 @@ ne pikseliais, o procentais.
             width: 33.33%;
             background-color: white;
             float:left;
-            height: 390px;
             position:relative;
             margin-top: 30px;
             padding-left: 140px;
@@ -233,7 +240,7 @@ ne pikseliais, o procentais.
             width: 33.33%;
             background-color: white;
             float:left;
-            height: 390px;
+           
             position:relative;
             margin-top: 30px;
             padding-left: 80px;
@@ -242,7 +249,7 @@ ne pikseliais, o procentais.
             width: 33.33%;
             background-color: white;
             float:left;
-            height: 390px;
+            
             position:relative;
             margin-top: 30px;
             padding-left: 40px;
@@ -284,14 +291,14 @@ ne pikseliais, o procentais.
         }
 
         .button2{
-            width: 100%;
+            position:absolute;
             background-color: white;
-            float:left;
+            right:0;
             height: 100px;
-            position:relative;
+            /* position:relative; */
             margin-top: 5px;
-            padding-left: 1200px;
-            padding-right: 40px;
+            /* padding-left: 1200px; */
+            /* padding-right: 40px; */
         }
 
         .item2 {
@@ -299,7 +306,7 @@ ne pikseliais, o procentais.
             color: #000000;
             background-color: #ffffff;
             
-            padding-left: 160px;
+            /* padding-left: 160px; */
           
             padding-top: 20px;
             padding-bottom: 15px;
@@ -342,6 +349,35 @@ ne pikseliais, o procentais.
   color: rgb(0, 0, 0);
 }
 
+/* Paskaitos kodas */
+
+.search-items {
+    width: 100%;
+    padding-left: 115px;
+}
+
+.search-item {
+    width: 33.33%;
+    float: left;
+}
+
+.search-item-content {
+    padding:25px;
+}
+.clearfix {
+    overflow: auto;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 76px;
+    line-height: 93px;
+}
+
+footer {
+    display: block;
+    width:100%;
+}
 
 
     </style>
@@ -390,11 +426,58 @@ ne pikseliais, o procentais.
 
 <div class='container2'>
 
-    <div class='column0'>
-        <p> Search Results</p>
+    <div class='column0 clearfix'>
+        <h1> Search Results</h1>
     </div>
 
-        <div class='column1'>
+
+        <div class='search-items clearfix'>
+            <div class='search-item'>
+                <div class='search-item-content'>
+                    <h4> Category</h4>
+                    <p> Assessing the Maturity of Your Data Management in Industry</p>
+                    <h4> At vero eos et accusamus et iusto odio dignissimos dueims...</h4>
+                </div>
+            </div>
+            <div class='search-item'>
+                <div class='search-item-content'>
+                    <h4> Category</h4>
+                    <p> Assessing the Maturity of Your Data Management in Industry</p>
+                    <h4> At vero eos et accusamus et iusto odio dignissimos dueims...</h4>
+                </div>
+            </div>
+            <div class='search-item'>
+                <div class='search-item-content'>
+                    <h4> Category</h4>
+                    <p> Assessing the Maturity of Your Data Management in Industry</p>
+                    <h4> At vero eos et accusamus et iusto odio dignissimos dueims...</h4>
+                </div>
+            </div>
+            <div class='search-item'>
+                <div class='search-item-content'>
+                    <h4> Category</h4>
+                    <p> Assessing the Maturity of Your Data Management in Industry</p>
+                    <h4> At vero eos et accusamus et iusto odio dignissimos dueims...</h4>
+                </div>
+            </div>
+            <div class='search-item'>
+                <div class='search-item-content'>
+                    <h4> Category</h4>
+                    <p> Assessing the Maturity of Your Data Management in Industry</p>
+                    <h4> At vero eos et accusamus et iusto odio dignissimos dueims...</h4>
+                </div>
+            </div>
+            <div class='search-item'>
+                <div class='search-item-content'>
+                    <h4> Category</h4>
+                    <p> Assessing the Maturity of Your Data Management in Industry</p>
+                    <h4> At vero eos et accusamus et iusto odio dignissimos dueims...</h4>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class='column1 col'>
             <h4> Category</h4>
             <p> Assessing the Maturity of Your Data Management in Industry</p>
             <h4> At vero eos et accusamus et iusto odio dignissimos dueims...</h4>
@@ -404,7 +487,7 @@ ne pikseliais, o procentais.
             <h4> At vero eos et accusamus et iusto odio dignissimos dueims...</h4>
         </div>
       
-        <div class='column2'>
+        <div class='column2 col'>
             <h4> Category</h4>
             <p> Assessing the Maturity of Your Data Management in Industry</p>
             <h4> At vero eos et accusamus et iusto odio dignissimos dueims...</h4>
@@ -414,7 +497,7 @@ ne pikseliais, o procentais.
             <h4> At vero eos et accusamus et iusto odio dignissimos dueims...</h4>
         </div>
 
-        <div class='column3'>
+        <div class='column3 col'>
         
             <h4> Category</h4>
             <p> Assessing the Maturity of Your Data Management in Industry</p>
@@ -433,16 +516,20 @@ ne pikseliais, o procentais.
 
         </div>
         
+
+
+        
+
+
+
+    </div>
+    </div>
+    <footer class='clearfix'>
         <div class='button2'>
             <a href="#" class="fa fa-linkedin"></a>
             <a href="#" class="fa fa-facebook"></a>
         </div> 
-
-
-
-    </div>
-    </div>
-
+    </footer>
     <script>
     (function () {
 var chosen ="en";
